@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots NavBar/NavLink Default 1`] = `
+<li
+  className="sc-bdnxRM kqHtUy"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <a
+    href="/Earth"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "white",
+        "fontFamily": "Spartan",
+        "fontSize": "10px",
+        "fontStyle": "normal",
+        "fontWeight": " bold",
+        "letterSpacing": "1px",
+        "lineHeight": "25px",
+        "textDecoration": "none",
+        "textTransform": "uppercase",
+      }
+    }
+  >
+    Earth
+  </a>
+</li>
+`;
