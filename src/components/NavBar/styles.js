@@ -1,15 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../screenSizes';
 export const StyledUnorderedList = styled.ul`
-  > li:first-of-type {
-    padding-top: 45px;
-  }
-  > li:last-of-type {
-    border-bottom: none;
-  }
-  li {
-    line-height: 65px;
-  }
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -33,9 +24,15 @@ export const StyledUnorderedList = styled.ul`
   @media ${device.mobileL} {
     display: inline;
     border-bottom: none;
-    /* > li & ::after {
-      content: icon;
-    } */
+    > li:first-of-type {
+      padding-top: 45px;
+    }
+    > li:last-of-type {
+      border-bottom: none;
+    }
+    li {
+      line-height: 65px;
+    }
     > div {
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       padding-bottom: 17px;
@@ -48,9 +45,9 @@ export const StyledUnorderedList = styled.ul`
   }
   div {
     font-family: Antonio;
+    font-weight: 400;
     margin-right: auto;
     font-style: normal;
-    font-weight: normal;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: -1.05px;

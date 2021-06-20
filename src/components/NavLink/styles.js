@@ -18,19 +18,20 @@ export const StyledListItem = styled.li`
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-right: 0px;
+
     > div {
       background: red;
       display: inline-block;
       border-radius: 50%;
       width: 20px;
       height: 20px;
-
       margin-right: 25px;
       vertical-align: middle;
     }
     > img {
-      display: inline-block;
-      vertical-align: middle;
+      display: inline-table;
+      float: right;
+      padding-top: 28px;
     }
   }
   > a {

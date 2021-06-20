@@ -21,6 +21,7 @@ const NavLink = ({ children, page, styles, activeStyles }) => {
       >
         {children}
       </ReactRouterNavLink>
+
       <img src={Chevron} alt="menu button" />
     </StyledListItem>
   );
