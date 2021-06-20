@@ -1,9 +1,10 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink as ReactRouterNavLink } from 'react-router-dom';
+import Chevron from '../../images/icon-chevron.svg';
 import { StyledListItem } from './styles';
 
-const NavLink = ({ children, page, styles }) => {
+const NavLink = ({ children, page, styles, activeStyles }) => {
   const [isHovering, setIsHovering] = React.useState(false);
   return (
     <StyledListItem
@@ -11,9 +12,16 @@ const NavLink = ({ children, page, styles }) => {
       onMouseLeave={() => setIsHovering(false)}
       isHovering={isHovering}
     >
-      <Link style={styles} to={page}>
+      <div></div>
+      <ReactRouterNavLink
+        role={page}
+        style={styles}
+        activeStyle={activeStyles}
+        to={page}
+      >
         {children}
-      </Link>
+      </ReactRouterNavLink>
+      <img src={Chevron} alt="menu button" />
     </StyledListItem>
   );
 };
@@ -22,6 +30,7 @@ NavLink.propTypes = {
   children: PropTypes.string.isRequired,
   page: PropTypes.string,
   styles: PropTypes.object,
+  activeStyles: PropTypes.object,
 };
 
 export default NavLink;

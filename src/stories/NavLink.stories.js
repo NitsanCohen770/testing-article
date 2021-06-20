@@ -5,8 +5,7 @@ export default {
   component: NavLink,
   title: 'NavBar/NavLink',
 };
-const defaultStyles = {
-  color: 'white',
+export const defaultStyles = {
   fontFamily: 'Spartan',
   fontStyle: 'normal',
   fontWeight: ' bold',
